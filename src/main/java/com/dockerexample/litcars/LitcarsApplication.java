@@ -2,14 +2,14 @@ package com.dockerexample.litcars;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
 @SpringBootApplication
 @RestController
-@EnableOAuth2Client
+@EnableOAuth2Sso
 public class LitcarsApplication {
 
     public String welcomeUser(Principal principal){
